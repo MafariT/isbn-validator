@@ -41,8 +41,11 @@ async function validateISBN() {
 
   const resultElement = document.getElementById('result');
   const bookLinkElement = document.getElementById('book-link');
+  const bookInfoContainer = document.getElementById('book-info');
 
   resultElement.textContent = isValid ? 'Valid ISBN' : 'Invalid ISBN';
+  resultElement.style.backgroundColor = isValid ? '#4CAF50' : 'red'; // Change background color
+  resultElement.style.display = 'block';
   bookLinkElement.innerHTML = '';
 
   if (isValid) {
@@ -50,12 +53,16 @@ async function validateISBN() {
       const bookInfo = await fetchBookInfo(isbn);
       if (bookInfo) {
         displayBookInfo(bookInfo, bookLinkElement);
+        bookInfoContainer.style.display = 'block';
       }
     } catch (error) {
       console.error('Error fetching book information:', error);
     }
+  } else {
+    bookInfoContainer.style.display = 'none'; 
   }
 }
+
 
 function displayBookInfo(bookInfo, bookLinkElement) {
   const bookLink = document.createElement('a');

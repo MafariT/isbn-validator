@@ -13,12 +13,15 @@
     <input type="text" id="isbn" placeholder="Enter ISBN...">
     <button onclick="validateISBN()">Validate</button>
     <p id="result"></p>
+    
+    <div id="book-info" style="display: none;">
+      <label for="title">Title:</label>
+      <input type="text" id="title" disabled>
+      
+      <label for="authors">Authors:</label>
+      <input type="text" id="authors" disabled>
+    </div>
     <div id="book-link"></div>
-
-    <label for="title">Title:</label>
-    <input type="text" id="title" readonly>
-    <label for="authors">Authors:</label>
-    <input type="text" id="authors" readonly>
   </div>
   <script src="js/main.js"></script>
 </body>

@@ -82,11 +82,12 @@
       "target": "dmg"
     },
     "win": {
-      "target": "nsis"
+      "target": "portable"
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "Ahmad Fadlan",
