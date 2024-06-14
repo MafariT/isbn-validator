@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISBN Validator</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ISBN Validator</h1>
+    <label for="isbn">Enter ISBN:</label>
+    <input type="text" id="isbn" placeholder="Enter ISBN...">
+    <button onclick="validateISBN()">Validate</button>
+    <p id="result"></p>
+    <div id="book-link"></div>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" readonly>
+    <label for="authors">Authors:</label>
+    <input type="text" id="authors" readonly>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
