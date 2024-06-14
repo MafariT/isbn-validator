@@ -3,39 +3,39 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; /* Darker background */
-  color: #fff; /* Light text */
+  background-color: #1a1a1a; 
+  color: #fff; 
 }
 
 .container {
   max-width: 400px;
   margin: 50px auto;
-  background-color: #333; /* Darker background */
+  background-color: #333; 
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Heavier shadow */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
 }
 
 h1 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #fff; /* Light text */
+  color: #fff; 
 }
 
 label {
   display: block;
   margin-bottom: 10px;
-  color: #ccc; /* Lighter text */
+  color: #ccc; 
 }
 
 input[type="text"] {
   width: calc(100% - 24px);
   padding: 12px;
-  border: 1px solid #555; /* Darker border */
+  border: 1px solid #555; 
   border-radius: 4px;
   margin-bottom: 20px;
-  background-color: #444; /* Darker input background */
-  color: #fff; /* Light text */
+  background-color: #444; 
+  color: #fff; 
 }
 
 button {
@@ -58,7 +58,7 @@ p#result {
   margin-top: 20px;
   font-size: 18px;
   padding: 10px;
-  background-color: #555; /* Darker background */
+  background-color: #555; 
   border-radius: 4px;
 }
 
@@ -68,7 +68,7 @@ p#result {
 
 #book-link a {
   display: inline-block;
-  background-color: #4CAF50; /* Green accent color */
+  background-color: #4CAF50; 
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -78,7 +78,7 @@ p#result {
 }
 
 #book-link a:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }
 
 label[for="title"],

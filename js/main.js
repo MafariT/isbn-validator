@@ -44,7 +44,7 @@ async function validateISBN() {
   const bookInfoContainer = document.getElementById('book-info');
 
   resultElement.textContent = isValid ? 'Valid ISBN' : 'Invalid ISBN';
-  resultElement.style.backgroundColor = isValid ? '#4CAF50' : 'red'; // Change background color
+  resultElement.style.backgroundColor = isValid ? '#4CAF50' : 'red';
   resultElement.style.display = 'block';
   bookLinkElement.innerHTML = '';
 
